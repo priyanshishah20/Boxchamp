@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+body {
+    background-color: #E7E8E8;
+}
+
+.bg {
+    background: url('bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.info-heading {
+    width: 60%;
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+
+.info-heading h1 {
+    font-size: 8rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.navbar {
+    padding-top: 3rem;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar-collapse {
+    padding: 1rem 2rem
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+
+.btn {
+    border-radius: 0;
+    color: #fff;
+    background-color: #ad1717;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.exercises {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: rgba(173, 23, 23, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -8rem;
+    padding: 1rem;
+}
+
+.ex-div {
+    width: 80%;
+}
+
+.ex-div .ex-img {
+    margin: 1rem 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: #ad1717;
+    font-weight: 700;
+}
+
+.hero-section {
+    margin: 8rem auto;
+}
+
+.hero-section-info {
+    margin-left: 7rem;
+    padding: 3.5rem 0;
+}
+
+.hero-section-info h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3rem;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section-info h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 110px;
+    background-color: #ad1717;
+}
+
+.hero-section-info p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    background-color: #000;
+    padding: 5rem 7.7rem 3rem 7.7rem;
+}
+
+.footer-section .footer-heading,
+.footer-section .footer-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-info-text {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.media-links ul {
+    display: flex;
+}
+
+.media-links ul li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.terms-conditions span {
+    padding: 0 1rem;
+}
+
+.footer-mail {
+    padding-top: 4rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .hero-section-info {
+        padding: 1rem 0;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bg {
+        min-height: 70vh;
+    }
+    .info-heading {
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    .info-heading h1 {
+        font-size: 4rem;
+    }
+    .exercises {
+        width: 70%;
+        margin-top: -9rem;
+    }
+    .hero-section {
+        margin: 5rem auto;
+    }
+    .hero-section-info {
+        margin-left: 3rem;
+        padding: 0;
+    }
+    .hero-section-info h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .hero-section-info h2::before {
+        height: -webkit-fill-available;
+    }
+    .hero-section-info p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-section {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+    .footer-info-text {
+        font-size: 2rem;
+    }
+    .footer-mail {
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section-info {
+        margin-left: 0;
+    }
+    .exercises {
+        margin-top: -3rem;
+    }
+    .footer-section {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .bg {
+        min-height: 80vh;
+    }
+    .info-heading {
+        margin-left: 2rem;
+        margin-top: 5rem;
+        width: 80%;
+    }
+    .info-heading h1 {
+        font-size: 3rem;
+    }
+    .exercises {
+        margin-top: 0rem;
+    }
+    .hero-section-info {
+        padding-top: 3rem;
+    }
+    /* .hero-section-info h2::before {
+        height: -webkit-fill-available;
+    } */
+    .footer-heading,
+    .footer-mail {
+        flex-direction: column;
+    }
+    .footer-section {
+        padding: 2rem;
+    }
+    .media-links ul {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .info-heading h1 {
+        font-size: 3rem;
+    }
+    .hero-section-info h2, .footer-info-text {
+        font-size: 1.6rem;
+    }
+}
